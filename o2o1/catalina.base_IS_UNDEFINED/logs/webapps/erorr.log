@@ -1,0 +1,2 @@
+2019-04-02 23:34:00.199 [main] ERROR com.imooc.o2o.util.ImageUtil - javax.imageio.IIOException: Can't read input file!
+2019-04-02 23:37:15.850 [main] ERROR com.imooc.o2o.util.ImageUtil - javax.imageio.IIOException: Can't read input file!

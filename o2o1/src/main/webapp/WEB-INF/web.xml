@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" 
+    id="WebApp_ID" version="3.1">
+  <display-name>Archetype Created Web Application</display-name>
+<welcome-file-list>
+<welcome-file>index.jsp</welcome-file>
+</welcome-file-list>
+<!-- 整合spring相关的配置 -->
+<servlet>
+<servlet-name>spring-dispatcher</servlet-name>
+<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+<init-param>
+<param-name>contextConfigLocation</param-name>
+<param-value>classpath:spring/spring-*.xml</param-value>
+</init-param>
+</servlet>
+<servlet-mapping>
+<servlet-name>spring-dispatcher</servlet-name>
+<!-- 默认配置所有请求 -->
+<url-pattern>/</url-pattern>
+</servlet-mapping>
+</web-app>
+<!-- 在pom中制定工程所以来的jar包，jdbc中制定数据库的连接方式，用 mybatis—config对mybatis进行配置,用spring-dao将
+jdbc，mybatis.xml加载，创建连接池，配置mybatis与数据库交互方式，spring-service进行事务管理，spring-web定义
+如何响应url请求，在web.xml将srping-dispatcher当做servlet注册在里面，响应前段请求，将spring三个文件整合到一块
+-->
