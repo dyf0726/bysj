@@ -20,7 +20,7 @@ import com.imooc.o2o.util.PathUtil;
 public class ShopServiceImpl implements ShopService {
 	@Autowired
 	private ShopDao shopDao;
-
+//222
 	@Override
 	@Transactional
 	public ShopExecution addShop(Shop shop, InputStream shopImgInputStream,String fileName) {
