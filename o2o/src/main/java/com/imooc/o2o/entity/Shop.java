@@ -91,12 +91,12 @@ public class Shop {
 		this.lastEditTime = lastEditTime;
 	}
 
-	public Integer getEnableStuts() {
+	public Integer getEnableStatus() {
 		return enableStatus;
 	}
 
-	public void setEnableStuts(Integer enableStuts) {
-		this.enableStatus = enableStuts;
+	public void setEnableStatus(Integer enableStatus) {
+		this.enableStatus = enableStatus;
 	}
 
 	public String getAdvice() {

@@ -8,6 +8,7 @@ import com.imooc.o2o.entity.Shop;
 import com.imooc.o2o.exceptions.ShopOperationException;
 
 public interface ShopService {
+	
 	/**
 	 * 根据shopCondition分页返回相应店铺列表
 	 * 

@@ -14,7 +14,7 @@ public class Product {
 	private Integer priority;
 	private Date createTime;
 	private Date lastEditTime;
-	private Integer enbleStauts;
+	private Integer enableStauts;
 	private List<ProductImg> productImgList;
 	private ProductCategory productCategory;
 	private Shop shop;
@@ -91,12 +91,12 @@ public class Product {
 		this.lastEditTime = lastEditTime;
 	}
 
-	public Integer getEnbleStauts() {
-		return enbleStauts;
+	public Integer getEnableStauts() {
+		return enableStauts;
 	}
 
-	public void setEnbleStauts(Integer enbleStauts) {
-		this.enbleStauts = enbleStauts;
+	public void setEnbleStauts(Integer enableStauts) {
+		this.enableStauts = enableStauts;
 	}
 
 	public List<ProductImg> getProductImgList() {
