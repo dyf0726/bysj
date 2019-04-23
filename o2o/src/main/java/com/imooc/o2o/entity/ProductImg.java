@@ -3,7 +3,7 @@ package com.imooc.o2o.entity;
 import java.util.Date;
 
 public class ProductImg {
-	private Long productImgID;
+	private Long productImgId;
 
 	private String imgAddr;
 	private String imgDesc;
@@ -11,12 +11,12 @@ public class ProductImg {
 	private Date createTime;
 	private Long productId;
 
-	public Long getProductImgID() {
-		return productImgID;
+	public Long getProductImgId() {
+		return productImgId;
 	}
 
-	public void setProductImgID(Long productImgID) {
-		this.productImgID = productImgID;
+	public void setProductImgId(Long productImgId) {
+		this.productImgId = productImgId;
 	}
 
 	public String getImgAddr() {

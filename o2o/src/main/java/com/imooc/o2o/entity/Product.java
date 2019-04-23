@@ -4,9 +4,9 @@ import java.util.Date;
 import java.util.List;
 
 public class Product {
-	private Long productID;
+	private Long productId;
 
-	private String productNme;
+	private String productName;
 	private String productDesc;
 	private String imgAddr;
 	private String normalPrice;
@@ -14,25 +14,25 @@ public class Product {
 	private Integer priority;
 	private Date createTime;
 	private Date lastEditTime;
-	private Integer enableStauts;
+	private Integer enableStatus;
 	private List<ProductImg> productImgList;
 	private ProductCategory productCategory;
 	private Shop shop;
 
-	public Long getProductID() {
-		return productID;
+	public Long getProductId() {
+		return productId;
 	}
 
-	public void setProductID(Long productID) {
-		this.productID = productID;
+	public void setProductId(Long productId) {
+		this.productId = productId;
 	}
 
-	public String getProductNme() {
-		return productNme;
+	public String getProductName() {
+		return productName;
 	}
 
-	public void setProductNme(String productNme) {
-		this.productNme = productNme;
+	public void setProductName(String productName) {
+		this.productName = productName;
 	}
 
 	public String getProductDesc() {
@@ -91,12 +91,12 @@ public class Product {
 		this.lastEditTime = lastEditTime;
 	}
 
-	public Integer getEnableStauts() {
-		return enableStauts;
+	public Integer getEnableStatus() {
+		return enableStatus;
 	}
 
-	public void setEnbleStauts(Integer enableStauts) {
-		this.enableStauts = enableStauts;
+	public void setEnableStatus(Integer enableStatus) {
+		this.enableStatus = enableStatus;
 	}
 
 	public List<ProductImg> getProductImgList() {
