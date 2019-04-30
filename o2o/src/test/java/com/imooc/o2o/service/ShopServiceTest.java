@@ -27,7 +27,7 @@ public class ShopServiceTest extends BaseTest {
      @Autowired
 	private ShopService shopService;
  	@Test
- 	@Ignore
+ 	
  	public void testGetShopList() {
  		Shop shopCondition = new Shop();
  		ShopCategory sc = new ShopCategory();
@@ -50,7 +50,7 @@ public class ShopServiceTest extends BaseTest {
  	    System.out.println("新的图片地址为：" + shopExecution.getShop().getShopImg());
      }
      @Test
-    
+     @Ignore
      public void testAddShop() throws ShopOperationException, FileNotFoundException {
     			Shop shop = new Shop();
     			PersonInfo owner = new PersonInfo();

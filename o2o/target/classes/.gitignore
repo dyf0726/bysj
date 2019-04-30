@@ -1,5 +1,3 @@
+/spring-redis.xml
 /com/
-/ProductCategoryDao.xml
-/ProductDao.xml
-/ProductImgDao.xml
-/HeadLineDao.xml
+/LocalAuthDao.xml

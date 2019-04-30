@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,16 +32,18 @@
 			</div>
 			<div class="shop-wrap"></div>
 		</div>
-		
-				
-				<div class="content-block">
-				<div class="row">
-				<div class="col-50">
-					<a href="#" id="log-out" 
+		<div class="content-block">
+			<div class="row">
+				<div class="col-33">
+					<a href="/o2o/local/accountbind?usertype=2"
+						class="button button-big button-fill button-success">帐号绑定</a>
+				</div>
+				<div class="col-33">
+					<a href="#" id="log-out" usertype="2"
 						class="button button-big button-fill button-danger">退出系统</a>
 				</div>
-				<div class="col-50">
-					<a href="/o2o/local/changepsw"
+				<div class="col-33">
+					<a href="/o2o/local/changepsw?usertype=2"
 						class="button button-big button-fill button-success"
 						id="bindOrChange">修改密码</a>
 				</div>
@@ -58,6 +61,7 @@
 		src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
 	<script type='text/javascript' src='../resources/js/shop/shoplist.js'
 		charset='utf-8'></script>
-			
+	<script type='text/javascript' src='../resources/js/local/logout.js'
+		charset='utf-8'></script>		
 </body>
 </html>

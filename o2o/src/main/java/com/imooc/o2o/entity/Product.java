@@ -12,6 +12,7 @@ public class Product {
 	private String normalPrice;
 	private String promotionPrice;
 	private Integer priority;
+	private Integer point;
 	private Date createTime;
 	private Date lastEditTime;
 	private Integer enableStatus;
@@ -113,6 +114,15 @@ public class Product {
 
 	public void setProductCategory(ProductCategory productCategory) {
 		this.productCategory = productCategory;
+	}
+
+	
+	public Integer getPoint() {
+		return point;
+	}
+
+	public void setPoint(Integer point) {
+		this.point = point;
 	}
 
 	public Shop getShop() {

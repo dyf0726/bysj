@@ -3,18 +3,18 @@ package com.imooc.o2o.entity;
 import java.util.Date;
 
 public class WechatAuth {
-	private Long wachatAuthId;
+	private Long wechatAuthId;
 
 	private String openId;
 	private Date createTime;
 	private PersonInfo personInfo;
 
-	public Long getWachatAuthId() {
-		return wachatAuthId;
+	public Long getWechatAuthId() {
+		return wechatAuthId;
 	}
 
-	public void setWachatAuthId(Long wachatAuthId) {
-		this.wachatAuthId = wachatAuthId;
+	public void setWechatAuthId(Long wechatAuthId) {
+		this.wechatAuthId = wechatAuthId;
 	}
 
 	public String getOpenId() {

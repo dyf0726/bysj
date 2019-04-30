@@ -1,39 +1,42 @@
-2019-04-24 14:08:43.129 [main] DEBUG com.imooc.o2o.dao.HeadLineDao.queryHeadLine - ==>  Preparing: SELECT line_id lineId, line_name lineName, line_link lineLink, line_img lineImg, priority, enable_status enableStatus, create_time createTime, last_edit_time lastEditTime FROM tb_head_line ORDER BY priority DESC 
-2019-04-24 14:08:43.177 [main] DEBUG com.imooc.o2o.dao.HeadLineDao.queryHeadLine - ==> Parameters: 
-2019-04-24 14:08:43.195 [main] DEBUG com.imooc.o2o.dao.HeadLineDao.queryHeadLine - <==      Total: 0
-2019-04-24 14:08:55.705 [main] DEBUG com.imooc.o2o.dao.HeadLineDao.queryHeadLine - ==>  Preparing: SELECT line_id lineId, line_name lineName, line_link lineLink, line_img lineImg, priority, enable_status enableStatus, create_time createTime, last_edit_time lastEditTime FROM tb_head_line ORDER BY priority DESC 
-2019-04-24 14:08:55.735 [main] DEBUG com.imooc.o2o.dao.HeadLineDao.queryHeadLine - ==> Parameters: 
-2019-04-24 14:08:55.751 [main] DEBUG com.imooc.o2o.dao.HeadLineDao.queryHeadLine - <==      Total: 0
-2019-04-24 14:14:05.652 [main] DEBUG c.imooc.o2o.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id ShopCategoryId, shop_category_name ShopCategoryName, shop_category_desc ShopCategoryDesc, shop_category_img ShopCategoryImg, priority priority, create_time createTime, last_edit_time lastEditTime, parent_id parent FROM tb_shop_category WHERE parent_id is null ORDER BY priority DESC 
-2019-04-24 14:14:05.686 [main] DEBUG c.imooc.o2o.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
-2019-04-24 14:14:05.708 [main] DEBUG c.imooc.o2o.dao.ShopCategoryDao.queryShopCategory - <==      Total: 1
-2019-04-24 15:53:50.232 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
-2019-04-24 15:53:50.265 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==> Parameters: 3(Long), 0(Integer), 6(Integer)
-2019-04-24 15:53:50.291 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - <==      Total: 1
-2019-04-24 15:53:50.299 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
-2019-04-24 15:53:50.299 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 
-2019-04-24 15:53:50.302 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
-2019-04-24 15:58:23.467 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
-2019-04-24 15:58:23.498 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==> Parameters: 3(Long), 0(Integer), 6(Integer)
-2019-04-24 15:58:23.519 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - <==      Total: 2
-2019-04-24 15:58:23.526 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
-2019-04-24 15:58:23.526 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 
-2019-04-24 15:58:23.528 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
-2019-04-24 16:00:46.711 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
-2019-04-24 16:00:46.745 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==> Parameters: 3(Long), 0(Integer), 6(Integer)
-2019-04-24 16:00:46.766 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - <==      Total: 2
-2019-04-24 16:00:46.773 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
-2019-04-24 16:00:46.774 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 3(Long)
-2019-04-24 16:00:46.775 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
-2019-04-24 17:05:03.225 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id shopId, s.shop_name shopName, s.shop_desc shopDesc, s.shop_addr shopAddr, s.phone Phone, s.shop_img shopImg, s.priority, s.create_time createTime, s.last_edit_time lastEditTime, s.enable_status enableStatus, s.advice , a.area_id areaId, a.area_name areaName, sc.shop_category_id shopCategoryId, sc.shop_category_name shopCategoryName FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
-2019-04-24 17:05:03.256 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==> Parameters: 3(Long), 0(Integer), 6(Integer)
-2019-04-24 17:05:03.274 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - <==      Total: 2
-2019-04-24 17:05:03.282 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
-2019-04-24 17:05:03.282 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 3(Long)
-2019-04-24 17:05:03.284 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
-2019-04-24 17:06:08.195 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id shopId, s.shop_name shopName, s.shop_desc shopDesc, s.shop_addr shopAddr, s.phone Phone, s.shop_img shopImg, s.priority, s.create_time createTime, s.last_edit_time lastEditTime, s.enable_status enableStatus, s.advice , a.area_id areaId, a.area_name areaName, sc.shop_category_id shopCategoryId, sc.shop_category_name shopCategoryName FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
-2019-04-24 17:06:08.225 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==> Parameters: 3(Long), 0(Integer), 6(Integer)
-2019-04-24 17:06:08.245 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - <==      Total: 3
-2019-04-24 17:06:08.253 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
-2019-04-24 17:06:08.253 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 3(Long)
-2019-04-24 17:06:08.255 [main] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2019-04-30 13:48:09.187 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id areaId,area_name areaName,priority priority,create_time createTime,last_edit_time lastEditTime FROM tb_area ORDER BY priority DESC 
+2019-04-30 13:48:09.219 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2019-04-30 13:48:09.258 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - <==      Total: 2
+2019-04-30 14:01:10.261 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id areaId,area_name areaName,priority priority,create_time createTime,last_edit_time lastEditTime FROM tb_area ORDER BY priority DESC 
+2019-04-30 14:01:10.293 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2019-04-30 14:01:10.313 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - <==      Total: 2
+2019-04-30 14:06:09.172 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.insertLocalAuth - ==>  Preparing: INSERT INTO tb_local_auth(username,password,user_id,create_time,last_edit_time) VALUES (?,?,?,?,?) 
+2019-04-30 14:06:09.218 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.insertLocalAuth - ==> Parameters: testusername(String), testpassword(String), 1(Long), 2019-04-30 14:06:08.745(Timestamp), null
+2019-04-30 14:06:09.234 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.insertLocalAuth - <==    Updates: 1
+2019-04-30 14:06:09.248 [main] DEBUG c.i.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.username = ? AND l.password = ? 
+2019-04-30 14:06:09.249 [main] DEBUG c.i.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==> Parameters: testusername(String), testpassword(String)
+2019-04-30 14:06:09.263 [main] DEBUG c.i.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - <==      Total: 1
+2019-04-30 14:06:09.271 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.user_id = ? 
+2019-04-30 14:06:09.271 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - ==> Parameters: 1(Long)
+2019-04-30 14:06:09.273 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - <==      Total: 1
+2019-04-30 14:06:09.307 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.updateLocalAuth - ==>  Preparing: update tb_local_auth SET password=?, last_edit_time=? where user_id=? AND username=? AND password=? 
+2019-04-30 14:06:09.308 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.updateLocalAuth - ==> Parameters: testpasswordnew(String), 2019-04-30 14:06:09.275(Timestamp), 1(Long), testusername(String), testpassword(String)
+2019-04-30 14:06:09.313 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.updateLocalAuth - <==    Updates: 1
+2019-04-30 14:06:09.313 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.user_id = ? 
+2019-04-30 14:06:09.313 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - ==> Parameters: 1(Long)
+2019-04-30 14:06:09.315 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - <==      Total: 1
+2019-04-30 15:46:58.332 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.updateLocalAuth - ==>  Preparing: update tb_local_auth SET password=?, last_edit_time=? where user_id=? AND username=? AND password=? 
+2019-04-30 15:46:58.365 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.updateLocalAuth - ==> Parameters: 6559sq606y6l92e9ss5qsqb5q92e566b(String), 2019-04-30 15:46:58.243(Timestamp), 1(Long), testusername(String), s06l5bl5s05602ly2syls6556q56sb6e(String)
+2019-04-30 15:46:58.367 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.updateLocalAuth - <==    Updates: 0
+2019-04-30 15:48:21.494 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.user_id = ? 
+2019-04-30 15:48:21.520 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - ==> Parameters: 1(Long)
+2019-04-30 15:48:21.537 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - <==      Total: 0
+2019-04-30 15:48:21.550 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.insertLocalAuth - ==>  Preparing: INSERT INTO tb_local_auth(username,password,user_id,create_time,last_edit_time) VALUES (?,?,?,?,?) 
+2019-04-30 15:48:21.556 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.insertLocalAuth - ==> Parameters: testusername(String), s06l5bl5s05602ly2syls6556q56sb6e(String), 1(Long), 2019-04-30 15:48:21.542(Timestamp), 2019-04-30 15:48:21.542(Timestamp)
+2019-04-30 15:48:21.558 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.insertLocalAuth - <==    Updates: 1
+2019-04-30 15:48:21.584 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.user_id = ? 
+2019-04-30 15:48:21.585 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - ==> Parameters: 1(Long)
+2019-04-30 15:48:21.588 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - <==      Total: 1
+2019-04-30 15:48:57.153 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.updateLocalAuth - ==>  Preparing: update tb_local_auth SET password=?, last_edit_time=? where user_id=? AND username=? AND password=? 
+2019-04-30 15:48:57.181 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.updateLocalAuth - ==> Parameters: 6559sq606y6l92e9ss5qsqb5q92e566b(String), 2019-04-30 15:48:57.073(Timestamp), 1(Long), testusername(String), s06l5bl5s05602ly2syls6556q56sb6e(String)
+2019-04-30 15:48:57.185 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.updateLocalAuth - <==    Updates: 1
+2019-04-30 15:48:57.211 [main] DEBUG c.i.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.username = ? AND l.password = ? 
+2019-04-30 15:48:57.212 [main] DEBUG c.i.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==> Parameters: testusername(String), 6559sq606y6l92e9ss5qsqb5q92e566b(String)
+2019-04-30 15:48:57.237 [main] DEBUG c.i.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - <==      Total: 1
+2019-04-30 17:37:43.463 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id areaId,area_name areaName,priority priority,create_time createTime,last_edit_time lastEditTime FROM tb_area ORDER BY priority DESC 
+2019-04-30 17:37:43.489 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2019-04-30 17:37:43.511 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - <==      Total: 2

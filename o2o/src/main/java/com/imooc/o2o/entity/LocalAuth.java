@@ -8,7 +8,7 @@ public class LocalAuth {
 	private String password;
 	private Date createTime;
 	private Date lastEditTime;
-	private PersonInfo personinfo;
+	private PersonInfo personInfo;
 
 	public Long getLocalAuthId() {
 		return localAuthId;
@@ -50,11 +50,11 @@ public class LocalAuth {
 		this.lastEditTime = lastEditTime;
 	}
 
-	public PersonInfo getPersoninfo() {
-		return personinfo;
+	public PersonInfo getPersonInfo() {
+		return personInfo;
 	}
 
-	public void setPersoninfo(PersonInfo personinfo) {
-		this.personinfo = personinfo;
+	public void setPersonInfo(PersonInfo personInfo) {
+		this.personInfo = personInfo;
 	}
 }

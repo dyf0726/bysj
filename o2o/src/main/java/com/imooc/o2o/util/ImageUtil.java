@@ -56,7 +56,7 @@ public class ImageUtil {
 		try {
 			Thumbnails.of(thumbnail.getImage()).size(200,200).
 			watermark(Positions.BOTTOM_RIGHT, ImageIO.
-					read(new File("E:/新建文件夹/o2o/src/main/resources/2.jpg")), 0.25f)
+					read(new File("/home/work/Users/baidu/work/image/7.jpg")), 0.25f)
 			.outputQuality(0.8f).toFile(dest);
 			
 		}
@@ -113,7 +113,7 @@ public class ImageUtil {
 		// 调用Thumbnails生成带有水印的图片
 		try {
 			Thumbnails.of(thumbnail.getImage()).size(337, 640)
-					.watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File("E:/新建文件夹/o2o/src/main/resources/2.jpg")), 0.25f)
+					.watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File("/home/work/Users/baidu/work/image/7.jpg")), 0.25f)
 					.outputQuality(0.9f).toFile(dest);
 		} catch (IOException e) {
 			logger.error(e.toString());
@@ -124,9 +124,9 @@ public class ImageUtil {
 	}
 	public static void main(String[] args) throws IOException {
 	
-		Thumbnails.of(new File("C:/Users/37602/Desktop/1.jpg")).size(200, 200)
-				.watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File("E:/新建文件夹/o2o/src/main/resources/2.jpg")), 0.25f)
-				.outputQuality(0.8f).toFile("C:/Users/37602/Desktop/3.jpg");
+		Thumbnails.of(new File("/home/work/Users/baidu/work/image/1.jpg")).size(200, 200)
+				.watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File("/home/work/Users/baidu/work/image/7.jpg")), 0.25f)
+				.outputQuality(0.8f).toFile("/home/work/Users/baidu/work/image/1.jpg");
 	}
 	/**
 	 * storePath是文件的路径还是目录的路径， 如果storePath是文件路径则删除该文件，
